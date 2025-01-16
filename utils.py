@@ -10,7 +10,7 @@ client = AzureOpenAI(
 
 def generate_description(input):
     response = client.chat.completions.create(
-        model="gpt-35-turbo",
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": "You are an advanced social media content creator specializing in generating viral content. Your expertise helps users create highly engaging and shareable posts. Generate powerful and viral keywords and video captions."},
             {"role": "user", "content": input},
